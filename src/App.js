@@ -1,9 +1,13 @@
+import Posts from "./Posts";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-        Hello World
-    </div>
+      <Router>
+        <Routes>
+          <Route path="/posts" element={<Posts />}> </Route>
+        </Routes>
+      </Router>
   );
 }
 
